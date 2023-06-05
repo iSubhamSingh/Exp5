@@ -1,0 +1,13 @@
+@import '../tab1/tab1.page.scss';
+
+ion-header {
+  @include header();
+
+}
+
+ion-content {
+  @include scrollb();
+
+  --background: $primaryC;
+  background-color: $primaryC;
+}

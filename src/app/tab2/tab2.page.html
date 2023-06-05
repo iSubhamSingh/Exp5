@@ -1,12 +1,11 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-item>
-      <ion-thumbnail slot="start" style="width:45px;height:45px;">
-        <img alt="Silhouette of mountains" src="../assets/logo.png" />
+      <ion-thumbnail slot="start" style="width:100px;height:50px;">
+        <img alt="Silhouette of mountains" src="../assets/logo.jpg" />
       </ion-thumbnail>
       <ion-label
-        style="color:white;font-family:'Comic Sans MS', 'Comic Sans', cursive;font-size: 20px;font-weight: bolder;">Fun
-        with Learning</ion-label>
+        style="color:white;font-family:'Comic Sans MS', 'Comic Sans', cursive;font-size: 20px;font-weight: bolder;"></ion-label>
     </ion-item>
   </ion-toolbar>
 </ion-header>
@@ -19,9 +18,9 @@
       <ion-segment-button value="dark" (click)="toggle()">
         <ion-label style="color:rgb(210, 15, 47);font-weight:bold;">Practise</ion-label>
       </ion-segment-button>
-      <ion-segment-button value="segment" (click)="toggleL()">
+      <!-- <ion-segment-button value="segment" (click)="toggleL()">
         <ion-label style="color:rgb(210, 15, 47);font-weight:bold;">Leaderboard</ion-label>
-      </ion-segment-button>
+      </ion-segment-button> -->
     </ion-segment>
 
 
@@ -29,7 +28,7 @@
 
     <h5 style="margin-left:20px;color:rgb(210, 15, 47);font-weight: bold;">Practise Set</h5>
 
-    <ion-card class="prac" *ngIf="pTab" style="background-color:orange;padding:0px;">
+    <ion-card class="prac" *ngIf="pTab" style="background-color:rgb(19, 228, 64);padding:0px;">
       <ul>
         <li (click)="toggleP1()" style="--ion-background-color: #f7fdb8;background-color: #f7fdb8;">
           <div class="items" style="text-align:center;">
@@ -229,7 +228,7 @@
     </ion-card>
 
     <ion-card *ngIf="finish2" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-      <ion-item style="--ion-background-color: orange;background-color: orange">
+      <ion-item style="--ion-background-color: orange;background-color: rgb(7, 6, 5)">
 
         <ion-col size="1">
           <ion-icon name="arrow-back-circle" (click)="toggle()"

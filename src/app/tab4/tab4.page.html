@@ -1,9 +1,70 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>tab4</ion-title>
+    <ion-item>
+      <ion-thumbnail slot="start" style="width:100px;height:50px;">
+        <img alt="Silhouette of mountains" src="../assets/logo.jpg" />
+      </ion-thumbnail>
+      <ion-label
+        style="color:white;font-family:'Comic Sans MS', 'Comic Sans', cursive;font-size: 20px;font-weight: bolder;">Fun
+        with Learning</ion-label>
+    </ion-item>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-card class="prac" *ngIf="pTab"
+      style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;padding-top: 10px;padding-bottom:10px;">
 
-</ion-content>
+      <ion-img src="../assets/leader.png" style="width:260px;height:200px;"></ion-img>
+
+      <ion-card class="lead">
+        <ion-item>
+          <ion-col size="2">
+            <ion-img src="../assets/abc.png"></ion-img>
+          </ion-col>
+
+          <ion-col size="8" class="in">
+            &nbsp;&nbsp;Alphabets
+          </ion-col>
+
+          <ion-col size="2" class="in">
+            {{totalCor1*10}}
+          </ion-col>
+        </ion-item>
+      </ion-card>
+
+      <ion-card class="lead">
+        <ion-item>
+          <ion-col size="2">
+            <ion-img src="../assets/123.png"></ion-img>
+          </ion-col>
+
+          <ion-col size="8" class="in">
+            &nbsp;&nbsp;Numbers
+          </ion-col>
+
+          <ion-col size="2" class="in">
+            {{totalCor2*10}}
+          </ion-col>
+        </ion-item>
+      </ion-card>
+
+
+      <hr style="border: 0;clear:both;display:block;width: 96%;background-color:rgb(210, 15, 47);height: 1px;">
+
+      <ion-card class="lead" style=" --ion-background-color: #FFCCE1;background-color:#FFCCE1;">
+        <ion-item>
+          <ion-col size="2">
+            <ion-img src="../assets/podium.png"></ion-img>
+          </ion-col>
+
+          <ion-col size="8" class="in">
+            &nbsp;&nbsp;Total Score
+          </ion-col>
+
+          <ion-col size="2" class="in">
+            {{totalCor1*10+totalCor2*10}}
+          </ion-col>
+        </ion-item>
+      </ion-card>
+
+    </ion-card>
